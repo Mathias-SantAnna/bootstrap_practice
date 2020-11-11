@@ -2,12 +2,88 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-.alert-container{}
+.alert-container{
+    text-align: center;
+}
 
 .callout-container {
     height: 100vh;
+
+    background: url("../images/jameson.png") no-repeat top right fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+
 }
+
+.opaque-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.5);
+    }
 
 .quotes-container {}
 
-.features-container {}
+.features-container {} 
+
+/* Block Dividers */
+.block-divider {
+    width: 85%;
+    height: 4px;
+    border: 0;
+    background-color: #a36a26;
+}
+
+/* Jumbotron */
+.jumbotron {
+    background-color: transparent;
+}
+
+.jumbotron-header {
+    color: white;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.jumbotron .lead {
+    margin: 25px 0;
+    color: #a0fb57;
+}
+
+.jumbotron small {
+    font-size: 60%;
+    font-style: italic;
+    color: #d0d0d0;
+}
+
+/* Buttons */
+.btn--cta {
+    font-weight: bold;
+    border-radius: 21px;
+    width: 160px;
+}
+
+.btn--green {
+    color: white;
+    background-color: #3bcf0d;
+    border-color: #3bcf0d;
+    
+}
+
+.btn--green:hover,
+.btn--green:active,
+.btn--green:focus,
+.btn--green:active:focus {
+    background-color: #2f9c0e;
+    border-color: #2f9c0e;
+}
